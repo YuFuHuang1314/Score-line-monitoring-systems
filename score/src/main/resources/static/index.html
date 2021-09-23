@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=YmT7XzL4O9IplhNmNo93NwlgwH9PF19U"></script>
+		<script src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
+		<link rel="stylesheet" href="css/initialize.css">
+		<link rel="stylesheet" href="css/index.css">
+		<script src="js/echarts.min.js"></script>
+		<script src="theme/light.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/index.js"></script>
+		<title>武汉轻工大学录取分数线监测系统</title>
+	</head>
+
+	<body>
+		<!--大div-->
+		<div class="chart-warp">
+			<!--头部-->
+			<div class="head-view">
+				<div class="head-text">
+					武汉轻工大学录取分数线监测系统
+					<div class="head-text view_line" style="left: 36px;">
+						<div class="head_text_view"></div>
+					</div>
+					<div class="head-text view_line" style="left: 50px;">
+						<div class="head_text_view"></div>
+					</div>
+					<div class="head-text view_line" style="right: 16px;">
+						<div class="head_text_view"></div>
+					</div>
+					<div class="head-text view_line" style="right: 30px;">
+						<div class="head_text_view"></div>
+					</div>
+				</div>
+				<div class="screen"></div>
+			</div>
+			<!--内容区域-->
+			<div class="content-warp">
+				<!--左边-->
+				<div class="left-show">
+					<div class="left-content ">
+						<div class="left_title">历年录取分数线</div>
+						<div class="left_line1" id="left_part1"></div>
+						<div class="border-t_l corner"></div>
+						<div class="border-t_r corner"></div>
+						<div class="border-b_l corner"></div>
+						<div class="border-b_r corner"></div>
+					</div>
+					<div class="left-content">
+						<div class="left_title">20年录取人数</div>
+						<div class="left_title_tip">
+							<marquee behavior="scroll" direction="left" id="water_bar_tip"></marquee>
+						</div>
+						<div class="left_bar1" id="left_part2"></div>
+						<div class="border-t_l corner"></div>
+						<div class="border-t_r corner"></div>
+						<div class="border-b_l corner"></div>
+						<div class="border-b_r corner"></div>
+					</div>
+				</div>
+				<!--中间-->
+				<div class="center-show">
+					<div class="center-content center-title">
+						<marquee behavior="scroll" direction="left" scrollamount="15">
+							<span style="color: Lime;">欢迎报考武汉轻工大学</span>
+							<span style="color: red;">建议报数学与计算机学院</span>
+							<span style="color: orange;">预测2021分数线和2020年相差不大，在520分上下</span>
+						</marquee>
+					</div>
+					<div class="center-content center-content-bottom" id="allmap">
+						<div class="border-t_l corner"></div>
+						<div class="border-t_r corner"></div>
+						<div class="border-b_l corner"></div>
+						<div class="border-b_r corner"></div>
+					</div>
+				</div>
+				<!--右边-->
+				<div class="right-show">
+					<div class="right-content">
+						<div class="right_title">各学院分数线</div>
+						<div class="right_pie1" id="right_part1"></div>
+						<div class="border-t_l corner"></div>
+						<div class="border-t_r corner"></div>
+						<div class="border-b_l corner"></div>
+						<div class="border-b_r corner"></div>
+					</div>
+					<div class="right-content">
+						<div class="right_title">20年分数线</div>
+						<div class="right_pie1" id="right_part2"></div>
+						<div class="border-t_l corner"></div>
+						<div class="border-t_r corner"></div>
+						<div class="border-b_l corner"></div>
+						<div class="border-b_r corner"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
